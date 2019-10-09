@@ -1,0 +1,52 @@
+body {
+    background-color: darkblue;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 350%;
+    text-shadow: 3px 2px Blue;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: "Times New Roman";
+    color: lightblue;
+    letter-spacing: .5px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    font-size: 120%;
+    color: lightblue;
+    letter-spacing: .5px;
+    line-height: 1.2;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.col {
+    flex: 1;
+}
+
+.image {
+    width: 120px;
+    height: 120px;
+}
+
+
+p {
+    font-family: "Times New Roman";
+    font-size: 120%;
+    color: lightblue;
+    letter-spacing: .5px;
+    line-height: 1.2;
+}
