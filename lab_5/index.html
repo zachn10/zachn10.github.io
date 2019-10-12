@@ -286,18 +286,17 @@
       const json = sessionStorage.getItem('countries');
       const list = JSON.parse(json);
       const element = document.querySelector('instructions');
+      sessionStorage.setItem();
 
         for (i = 0, i < countries.length; i++;) {
-          let results = countries[i]
-          for (var country in results) {
           const randomItem = countries[Math.floor(Math.random() * countries.length)];
+          let results = countries[randomItem]
+          if (randomItem == 50) {
           document.writeln("<ol>" + results)
           console.log(results);
         }
         }
     }
-
-    sessionStorage.setItem();
 
   </script>
 </body>
