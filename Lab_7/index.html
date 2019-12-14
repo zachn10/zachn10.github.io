@@ -23,6 +23,7 @@
         .then(res => res.json())
         .then(data => data.map(item => [item.route_id,item.title].join(" ")))
         .then(data => {
+
           // you can now work in this area
           let content = document.querySelector(".content");
           content.innerHTML = "";
@@ -34,14 +35,13 @@
               let routeName = route.substring(4, route.length);
               data[i] = routeName;
             }
+
             el.innerText = data[i];
             list.appendChild(el);
           }
           content.appendChild(list);
           return data;
         })
-
-    // function to get Title & Route ID
 
     function routes(item) {
       if(item.title.includes(item.route_id) == true) {
